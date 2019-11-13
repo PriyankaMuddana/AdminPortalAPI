@@ -1,0 +1,2517 @@
+Started POST "/" for ::1 at 2019-11-12 20:51:19 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/signup" for ::1 at 2019-11-12 20:51:30 +0530
+Processing by RegistrationsController#create as */*
+Completed 401 Unauthorized in 5ms (MongoDB: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-11-12 20:52:35 +0530
+Processing by RegistrationsController#create as */*
+Completed 401 Unauthorized in 1ms (MongoDB: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-11-12 20:59:00 +0530
+Processing by RegistrationsController#create as */*
+Completed 500 Internal Server Error in 2ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fcfc83669e8>
+Did you mean?  try):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for ::1 at 2019-11-12 20:59:50 +0530
+Processing by RegistrationsController#create as */*
+Completed 500 Internal Server Error in 2ms (MongoDB: 0.0ms)
+
+
+  
+LoadError (libreadline.so.7: cannot open shared object file: No such file or directory - /home/justjuned/.rbenv/versions/2.5.1/lib/ruby/2.5.0/x86_64-linux/readline.so):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for ::1 at 2019-11-12 21:04:22 +0530
+Processing by RegistrationsController#create as */*
+Completed 500 Internal Server Error in 3ms (MongoDB: 0.0ms)
+
+
+  
+LoadError (libreadline.so.7: cannot open shared object file: No such file or directory - /home/justjuned/.rbenv/versions/2.5.1/lib/ruby/2.5.0/x86_64-linux/readline.so):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for ::1 at 2019-11-12 21:06:02 +0530
+Processing by RegistrationsController#create as */*
+Completed 500 Internal Server Error in 2ms (MongoDB: 0.0ms)
+
+
+  
+LoadError (libreadline.so.7: cannot open shared object file: No such file or directory - /home/justjuned/.rbenv/versions/2.5.1/lib/ruby/2.5.0/x86_64-linux/readline.so):
+  
+app/controllers/registrations_controller.rb:5:in `create'
+Started POST "/signup" for ::1 at 2019-11-12 21:08:27 +0530
+Processing by RegistrationsController#create as */*
+Completed 500 Internal Server Error in 135223ms (MongoDB: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `sign_up_params' for #<RegistrationsController:0x0000561fcc82c6b0>
+Did you mean?  sign_in_params):
+  
+app/controllers/registrations_controller.rb:6:in `create'
+Started POST "/signup" for ::1 at 2019-11-12 21:10:48 +0530
+Processing by RegistrationsController#create as */*
+Completed 500 Internal Server Error in 67951ms (MongoDB: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `sign_up_params' for #<RegistrationsController:0x00007fccd5193490>
+Did you mean?  sign_in_params):
+  
+app/controllers/registrations_controller.rb:6:in `create'
+Started POST "/signup" for ::1 at 2019-11-12 21:12:00 +0530
+Error occurred while parsing request parameters.
+Contents:
+
+{
+  user: {
+    email: "test@user.com",
+    encrypted_password: "password"
+  }
+}
+  
+ActionDispatch::Http::Parameters::ParseError (765: unexpected token at '{
+  user: {
+    email: "test@user.com",
+    encrypted_password: "password"
+  }
+}'):
+  
+actionpack (5.1.7) lib/action_dispatch/http/parameters.rb:115:in `rescue in parse_formatted_parameters'
+actionpack (5.1.7) lib/action_dispatch/http/parameters.rb:109:in `parse_formatted_parameters'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:361:in `block in POST'
+rack (2.0.7) lib/rack/request.rb:59:in `fetch'
+rack (2.0.7) lib/rack/request.rb:59:in `fetch_header'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:360:in `POST'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-11-12 22:04:56 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 500 Internal Server Error in 258ms (MongoDB: 0.1ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `digest'
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `sign'
+jwt (2.2.1) lib/jwt/signature.rb:37:in `sign'
+jwt (2.2.1) lib/jwt/encode.rb:57:in `encode_signature'
+jwt (2.2.1) lib/jwt/encode.rb:34:in `encoded_signature'
+jwt (2.2.1) lib/jwt/encode.rb:20:in `segments'
+jwt (2.2.1) lib/jwt.rb:24:in `encode'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/token_encoder.rb:18:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/user_encoder.rb:33:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:41:in `add_token_to_env'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:28:in `prepare_token'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:18:in `after_set_user'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:65:in `block in <top (required)>'
+warden (1.2.8) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.8) lib/warden/hooks.rb:10:in `each'
+warden (1.2.8) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.8) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.8) lib/warden/proxy.rb:191:in `set_user'
+warden (1.2.8) lib/warden/proxy.rb:339:in `_perform_authentication'
+warden (1.2.8) lib/warden/proxy.rb:133:in `authenticate!'
+devise (4.7.1) app/controllers/devise/sessions_controller.rb:19:in `create'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-11-12 22:05:19 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 500 Internal Server Error in 164ms (MongoDB: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `digest'
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `sign'
+jwt (2.2.1) lib/jwt/signature.rb:37:in `sign'
+jwt (2.2.1) lib/jwt/encode.rb:57:in `encode_signature'
+jwt (2.2.1) lib/jwt/encode.rb:34:in `encoded_signature'
+jwt (2.2.1) lib/jwt/encode.rb:20:in `segments'
+jwt (2.2.1) lib/jwt.rb:24:in `encode'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/token_encoder.rb:18:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/user_encoder.rb:33:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:41:in `add_token_to_env'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:28:in `prepare_token'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:18:in `after_set_user'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:65:in `block in <top (required)>'
+warden (1.2.8) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.8) lib/warden/hooks.rb:10:in `each'
+warden (1.2.8) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.8) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.8) lib/warden/proxy.rb:191:in `set_user'
+warden (1.2.8) lib/warden/proxy.rb:339:in `_perform_authentication'
+warden (1.2.8) lib/warden/proxy.rb:133:in `authenticate!'
+devise (4.7.1) app/controllers/devise/sessions_controller.rb:19:in `create'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-11-12 22:07:43 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 500 Internal Server Error in 156ms (MongoDB: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `digest'
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `sign'
+jwt (2.2.1) lib/jwt/signature.rb:37:in `sign'
+jwt (2.2.1) lib/jwt/encode.rb:57:in `encode_signature'
+jwt (2.2.1) lib/jwt/encode.rb:34:in `encoded_signature'
+jwt (2.2.1) lib/jwt/encode.rb:20:in `segments'
+jwt (2.2.1) lib/jwt.rb:24:in `encode'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/token_encoder.rb:18:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/user_encoder.rb:33:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:41:in `add_token_to_env'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:28:in `prepare_token'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:18:in `after_set_user'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:65:in `block in <top (required)>'
+warden (1.2.8) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.8) lib/warden/hooks.rb:10:in `each'
+warden (1.2.8) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.8) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.8) lib/warden/proxy.rb:191:in `set_user'
+warden (1.2.8) lib/warden/proxy.rb:339:in `_perform_authentication'
+warden (1.2.8) lib/warden/proxy.rb:133:in `authenticate!'
+devise (4.7.1) app/controllers/devise/sessions_controller.rb:19:in `create'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-11-12 22:11:00 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 500 Internal Server Error in 150ms (MongoDB: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `digest'
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `sign'
+jwt (2.2.1) lib/jwt/signature.rb:37:in `sign'
+jwt (2.2.1) lib/jwt/encode.rb:57:in `encode_signature'
+jwt (2.2.1) lib/jwt/encode.rb:34:in `encoded_signature'
+jwt (2.2.1) lib/jwt/encode.rb:20:in `segments'
+jwt (2.2.1) lib/jwt.rb:24:in `encode'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/token_encoder.rb:18:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/user_encoder.rb:33:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:41:in `add_token_to_env'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:28:in `prepare_token'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:18:in `after_set_user'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:65:in `block in <top (required)>'
+warden (1.2.8) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.8) lib/warden/hooks.rb:10:in `each'
+warden (1.2.8) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.8) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.8) lib/warden/proxy.rb:191:in `set_user'
+warden (1.2.8) lib/warden/proxy.rb:339:in `_perform_authentication'
+warden (1.2.8) lib/warden/proxy.rb:133:in `authenticate!'
+devise (4.7.1) app/controllers/devise/sessions_controller.rb:19:in `create'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-11-12 22:33:19 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 500 Internal Server Error in 261ms (MongoDB: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `digest'
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `sign'
+jwt (2.2.1) lib/jwt/signature.rb:37:in `sign'
+jwt (2.2.1) lib/jwt/encode.rb:57:in `encode_signature'
+jwt (2.2.1) lib/jwt/encode.rb:34:in `encoded_signature'
+jwt (2.2.1) lib/jwt/encode.rb:20:in `segments'
+jwt (2.2.1) lib/jwt.rb:24:in `encode'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/token_encoder.rb:18:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/user_encoder.rb:33:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:41:in `add_token_to_env'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:28:in `prepare_token'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:18:in `after_set_user'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:65:in `block in <top (required)>'
+warden (1.2.8) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.8) lib/warden/hooks.rb:10:in `each'
+warden (1.2.8) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.8) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.8) lib/warden/proxy.rb:191:in `set_user'
+warden (1.2.8) lib/warden/proxy.rb:339:in `_perform_authentication'
+warden (1.2.8) lib/warden/proxy.rb:133:in `authenticate!'
+devise (4.7.1) app/controllers/devise/sessions_controller.rb:19:in `create'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-11-12 22:37:46 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 500 Internal Server Error in 187ms (MongoDB: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `digest'
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `sign'
+jwt (2.2.1) lib/jwt/signature.rb:37:in `sign'
+jwt (2.2.1) lib/jwt/encode.rb:57:in `encode_signature'
+jwt (2.2.1) lib/jwt/encode.rb:34:in `encoded_signature'
+jwt (2.2.1) lib/jwt/encode.rb:20:in `segments'
+jwt (2.2.1) lib/jwt.rb:24:in `encode'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/token_encoder.rb:18:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/user_encoder.rb:33:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:41:in `add_token_to_env'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:28:in `prepare_token'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:18:in `after_set_user'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:65:in `block in <top (required)>'
+warden (1.2.8) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.8) lib/warden/hooks.rb:10:in `each'
+warden (1.2.8) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.8) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.8) lib/warden/proxy.rb:191:in `set_user'
+warden (1.2.8) lib/warden/proxy.rb:339:in `_perform_authentication'
+warden (1.2.8) lib/warden/proxy.rb:133:in `authenticate!'
+devise (4.7.1) app/controllers/devise/sessions_controller.rb:19:in `create'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-11-12 22:40:11 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 500 Internal Server Error in 184ms (MongoDB: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `digest'
+jwt (2.2.1) lib/jwt/algos/hmac.rb:14:in `sign'
+jwt (2.2.1) lib/jwt/signature.rb:37:in `sign'
+jwt (2.2.1) lib/jwt/encode.rb:57:in `encode_signature'
+jwt (2.2.1) lib/jwt/encode.rb:34:in `encoded_signature'
+jwt (2.2.1) lib/jwt/encode.rb:20:in `segments'
+jwt (2.2.1) lib/jwt.rb:24:in `encode'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/token_encoder.rb:18:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/user_encoder.rb:33:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:41:in `add_token_to_env'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:28:in `prepare_token'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:18:in `after_set_user'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/hooks.rb:65:in `block in <top (required)>'
+warden (1.2.8) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+warden (1.2.8) lib/warden/hooks.rb:10:in `each'
+warden (1.2.8) lib/warden/hooks.rb:10:in `_run_callbacks'
+warden (1.2.8) lib/warden/manager.rb:52:in `_run_callbacks'
+warden (1.2.8) lib/warden/proxy.rb:191:in `set_user'
+warden (1.2.8) lib/warden/proxy.rb:339:in `_perform_authentication'
+warden (1.2.8) lib/warden/proxy.rb:133:in `authenticate!'
+devise (4.7.1) app/controllers/devise/sessions_controller.rb:19:in `create'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.1.7) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-11-12 22:48:34 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 174ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-12 22:49:14 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 157ms (MongoDB: 0.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-12 22:55:40 +0530
+Processing by SessionsController#destroy as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 33ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-12 22:57:28 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 151ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-12 22:57:37 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 174ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-11-12 23:50:41 +0530
+  
+ActionController::RoutingError (uninitialized constant UsersController::UserHelper):
+  
+app/controllers/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"user": {
+		first_name: "John",
+		last_name: "Degree",
+		password: "password",
+		email: "johncena@fmail.com"
+	}
+}
+Started POST "/users" for ::1 at 2019-11-12 23:54:42 +0530
+  
+ActionController::RoutingError (undefined method `before_filter' for UsersController:Class
+Did you mean?  before_action):
+  
+app/controllers/users_controller.rb:4:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<top (required)>'
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"user": {
+		first_name: "John",
+		last_name: "Degree",
+		password: "password",
+		email: "johncena@fmail.com"
+	}
+}
+Started POST "/users" for ::1 at 2019-11-12 23:55:59 +0530
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"user": {
+		first_name: "John",
+		last_name: "Degree",
+		password: "password",
+		email: "johncena@fmail.com"
+	}
+}
+  
+ActionDispatch::Http::Parameters::ParseError (765: unexpected token at '{
+	"user": {
+		first_name: "John",
+		last_name: "Degree",
+		password: "password",
+		email: "johncena@fmail.com"
+	}
+}'):
+  
+actionpack (5.1.7) lib/action_dispatch/http/parameters.rb:115:in `rescue in parse_formatted_parameters'
+actionpack (5.1.7) lib/action_dispatch/http/parameters.rb:109:in `parse_formatted_parameters'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:361:in `block in POST'
+rack (2.0.7) lib/rack/request.rb:59:in `fetch'
+rack (2.0.7) lib/rack/request.rb:59:in `fetch_header'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:360:in `POST'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2019-11-12 23:57:15 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "email"=>"johncena@fmail.com"}}
+Completed 401 Unauthorized in 115ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-12 23:58:55 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 2363ms (Views: 0.6ms | MongoDB: 0.9ms)
+
+
+Started POST "/users" for ::1 at 2019-11-12 23:59:08 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "email"=>"johncena@fmail.com"}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-11-13 00:02:11 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "email"=>"johncena@fmail.com"}}
+Completed 401 Unauthorized in 1ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 00:07:39 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 294ms (Views: 0.5ms | MongoDB: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2019-11-13 00:07:48 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "email"=>"johncena@fmail.com"}}
+Completed 401 Unauthorized in 1ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 00:14:45 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 274ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-11-13 00:14:49 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "email"=>"johncena@fmail.com"}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-13 00:15:40 +0530
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-11-13 00:18:48 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "email"=>"johncena@fmail.com"}}
+Completed 500 Internal Server Error in 170ms (MongoDB: 0.0ms)
+
+
+  
+NameError (uninitialized constant User::Tag):
+  
+app/controllers/users_controller.rb:15:in `create'
+Started POST "/users" for ::1 at 2019-11-13 00:20:07 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "email"=>"johncena@fmail.com"}}
+Completed 201 Created in 600ms (Views: 0.4ms | MongoDB: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-11-13 00:20:57 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "gender"=>"Gmail", "email"=>"johncena@fmail.com"}}
+Completed 403 Forbidden in 187ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-11-13 00:22:27 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "gender"=>"Gmail", "email"=>"johncena@fmail.com"}}
+Completed 403 Forbidden in 131879ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-11-13 00:24:44 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "gender"=>"Gmail", "email"=>"johncena@fmail.com"}}
+Completed 403 Forbidden in 158ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started PATCH "/users" for ::1 at 2019-11-13 00:28:16 +0530
+  
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/users/5dcafedf945dbe7e895a1ca3" for ::1 at 2019-11-13 00:29:26 +0530
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "gender"=>"Gmail", "email"=>"johncena1@fmail.com"}, "id"=>"5dcafedf945dbe7e895a1ca3"}
+No template found for UsersController#update, rendering head :no_content
+Completed 204 No Content in 70ms (MongoDB: 0.0ms)
+
+
+Started PATCH "/users/5dcafedf945dbe7e895a1ca3" for ::1 at 2019-11-13 00:29:56 +0530
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "gender"=>"Gmail", "email"=>"johncena1@fmail.com"}, "id"=>"5dcafedf945dbe7e895a1ca3"}
+Completed 403 Forbidden in 168564ms (Views: 0.2ms | MongoDB: 0.1ms)
+
+
+Started PATCH "/users/5dcafedf945dbe7e895a1ca3" for ::1 at 2019-11-13 00:32:56 +0530
+Processing by UsersController#update as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "gender"=>"Gmail", "email"=>"johncena1@fmail.com"}, "id"=>"5dcafedf945dbe7e895a1ca3"}
+Completed 403 Forbidden in 160ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started DELETE "/users/5dcafedf945dbe7e895a1ca3" for ::1 at 2019-11-13 00:37:34 +0530
+Processing by UsersController#destroy as */*
+  Parameters: {"user"=>{"first_name"=>"John", "last_name"=>"Degree", "password"=>"[FILTERED]", "gender"=>"Gmail", "email"=>"johncena1@fmail.com"}, "id"=>"5dcafedf945dbe7e895a1ca3"}
+Completed 200 OK in 199ms (Views: 0.5ms | MongoDB: 0.2ms)
+
+
+Started GET "/users?sort_by=gender&last_name=Shaikh" for ::1 at 2019-11-13 01:04:51 +0530
+Processing by UsersController#index as */*
+  Parameters: {"sort_by"=>"gender", "last_name"=>"Shaikh", "user"=>{}}
+Completed 500 Internal Server Error in 21ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `to_direction' for nil:NilClass):
+  
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users?sort_by=gender&last_name=Shaikh" for ::1 at 2019-11-13 01:05:19 +0530
+Processing by UsersController#index as */*
+  Parameters: {"sort_by"=>"gender", "last_name"=>"Shaikh", "user"=>{}}
+Completed 500 Internal Server Error in 3ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `to_direction' for nil:NilClass):
+  
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users?sort_by=gender&last_name=Shaikh" for ::1 at 2019-11-13 01:06:07 +0530
+Processing by UsersController#index as */*
+  Parameters: {"sort_by"=>"gender", "last_name"=>"Shaikh", "user"=>{}}
+Completed 500 Internal Server Error in 4ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `reorder' for nil:NilClass):
+  
+app/helpers/user_helper.rb:8:in `apply_filtering'
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/users?sort_by=gender&last_name=Shaikh" for ::1 at 2019-11-13 01:06:31 +0530
+Processing by UsersController#index as */*
+  Parameters: {"sort_by"=>"gender", "last_name"=>"Shaikh", "user"=>{}}
+Completed 500 Internal Server Error in 4ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `reorder' for nil:NilClass):
+  
+app/helpers/user_helper.rb:8:in `apply_filtering'
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/users?sort_by=gender&last_name=Shaikh" for ::1 at 2019-11-13 01:07:16 +0530
+Processing by UsersController#index as */*
+  Parameters: {"sort_by"=>"gender", "last_name"=>"Shaikh", "user"=>{}}
+Completed 500 Internal Server Error in 3ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `order_by' for nil:NilClass):
+  
+app/helpers/user_helper.rb:8:in `apply_filtering'
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/users?sort_by=gender&last_name=Shaikh" for ::1 at 2019-11-13 01:07:49 +0530
+Processing by UsersController#index as */*
+  Parameters: {"sort_by"=>"gender", "last_name"=>"Shaikh", "user"=>{}}
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 47ms (MongoDB: 0.0ms)
+
+
+Started GET "/users?sort_by=gender&last_name=Shaikh" for ::1 at 2019-11-13 01:08:42 +0530
+Processing by UsersController#index as */*
+  Parameters: {"sort_by"=>"gender", "last_name"=>"Shaikh", "user"=>{}}
+Completed 200 OK in 304ms (Views: 303.2ms | MongoDB: 0.3ms)
+
+
+Started GET "/users?sort_by=gender&last_name=Shaikh" for ::1 at 2019-11-13 01:09:31 +0530
+Processing by UsersController#index as */*
+  Parameters: {"sort_by"=>"gender", "last_name"=>"Shaikh", "user"=>{}}
+Started GET "/users?sort_by=gender&last_name=Shaikh" for ::1 at 2019-11-13 01:20:27 +0530
+Processing by UsersController#index as */*
+  Parameters: {"sort_by"=>"gender", "last_name"=>"Shaikh", "user"=>{}}
+Completed 200 OK in 513ms (Views: 512.6ms | MongoDB: 0.1ms)
+
+
+Started POST "/tags" for ::1 at 2019-11-13 01:33:08 +0530
+Processing by TagsController#create as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}}
+Unpermitted parameter: :name
+Completed 500 Internal Server Error in 24ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `email' for #<Tag:0x0000559a06eed4c8>):
+  
+app/controllers/tags_controller.rb:12:in `create'
+Started POST "/tags" for ::1 at 2019-11-13 01:33:54 +0530
+Processing by TagsController#create as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}}
+Completed 500 Internal Server Error in 15ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `email' for #<Tag:0x0000559a04b74488>):
+  
+app/controllers/tags_controller.rb:12:in `create'
+Started POST "/tags" for ::1 at 2019-11-13 01:34:18 +0530
+Processing by TagsController#create as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}}
+Completed 500 Internal Server Error in 14ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `email' for #<Tag:0x0000559a0670dfa0>):
+  
+app/controllers/tags_controller.rb:12:in `create'
+Started POST "/tags" for ::1 at 2019-11-13 01:35:32 +0530
+Processing by TagsController#create as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}}
+Completed 500 Internal Server Error in 40651ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `email' for #<Tag:0x0000559a06774340>):
+  
+app/controllers/tags_controller.rb:13:in `create'
+Started POST "/tags" for ::1 at 2019-11-13 01:36:18 +0530
+Processing by TagsController#create as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}}
+Completed 403 Forbidden in 86ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started POST "/tags" for ::1 at 2019-11-13 01:43:11 +0530
+Processing by TagsController#create as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}}
+Completed 403 Forbidden in 2ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started POST "/tags" for ::1 at 2019-11-13 01:43:36 +0530
+Processing by TagsController#create as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}}
+Completed 201 Created in 709ms (Views: 0.9ms | MongoDB: 0.7ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 01:59:14 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 194ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started POST "/tags" for ::1 at 2019-11-13 01:59:19 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/tags"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2019-11-13 01:59:43 +0530
+Processing by UsersController#create as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}, "user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 01:59:50 +0530
+Processing by UsersController#index as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}, "user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 01:59:54 +0530
+Processing by UsersController#index as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}, "user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 02:01:06 +0530
+Processing by UsersController#index as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}, "user"=>{}}
+Completed 200 OK in 2ms (Views: 1.9ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 02:08:15 +0530
+Processing by UsersController#index as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}, "user"=>{}}
+Completed 401 Unauthorized in 19ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 02:20:22 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 619ms (Views: 0.6ms | MongoDB: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 02:21:25 +0530
+Processing by UsersController#index as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}, "user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 02:21:35 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 162ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 02:21:39 +0530
+Processing by UsersController#index as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}, "user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 02:22:00 +0530
+Processing by UsersController#index as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}, "user"=>{}}
+Completed 500 Internal Server Error in 156ms (MongoDB: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `primary_key' for User:Class):
+  
+devise-jwt (0.6.0) lib/devise/jwt/models/jwt_authenticatable.rb:20:in `find_for_jwt_authentication'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/payload_user_helper.rb:15:in `find_user'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/user_decoder.rb:35:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/strategy.rb:22:in `authenticate!'
+warden (1.2.8) lib/warden/strategies/base.rb:54:in `_run!'
+warden (1.2.8) lib/warden/proxy.rb:369:in `block in _run_strategies_for'
+warden (1.2.8) lib/warden/proxy.rb:365:in `each'
+warden (1.2.8) lib/warden/proxy.rb:365:in `_run_strategies_for'
+warden (1.2.8) lib/warden/proxy.rb:335:in `_perform_authentication'
+warden (1.2.8) lib/warden/proxy.rb:133:in `authenticate!'
+devise (4.7.1) lib/devise/controllers/helpers.rb:118:in `authenticate_user!'
+activesupport (5.1.7) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.7) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.7) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-13 02:22:27 +0530
+Processing by UsersController#index as */*
+  Parameters: {"tag"=>{"name"=>"johncena"}, "user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 02:25:03 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 289ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 02:25:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/tags"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-13 02:25:37 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 02:25:45 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 02:27:01 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 02:30:27 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 02:30:59 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 02:34:55 +0530
+  
+NoMethodError (undefined method `table_name=' for JwtBlacklist:Class):
+  
+app/models/jwt_blacklist.rb:2:in `<class:JwtBlacklist>'
+app/models/jwt_blacklist.rb:1:in `<top (required)>'
+app/models/user.rb:4:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started POST "/login" for 127.0.0.1 at 2019-11-13 02:51:45 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 607ms (Views: 0.8ms | MongoDB: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-11-13 02:53:00 +0530
+Processing by UsersController#index as */*
+Completed 200 OK in 143ms (Views: 87.9ms | MongoDB: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-13 02:53:18 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 157ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-11-13 02:53:21 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 02:54:09 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 158ms (Views: 0.5ms | MongoDB: 0.0ms)
+
+
+Started GET "/userscurl" for 127.0.0.1 at 2019-11-13 02:56:17 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/userscurl"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-11-13 02:56:17 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-11-13 02:56:34 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-13 03:05:06 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 395ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 03:05:27 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 156ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-11-13 03:05:46 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-13 03:11:32 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 228ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-11-13 03:11:46 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 03:11:56 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 162ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 03:12:00 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 03:12:02 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-13 03:15:11 +0530
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 03:15:50 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 210ms (Views: 0.5ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 03:15:58 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2019-11-13 07:32:59 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/tags"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-11-13 07:33:42 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 157ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 07:33:48 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-13 07:36:48 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 149ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-11-13 07:36:59 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-13 07:41:39 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 228ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-11-13 07:41:44 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-13 07:42:55 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 147ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-11-13 07:43:07 +0530
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 07:43:17 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 159ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 07:43:36 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 155ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 07:43:41 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 07:44:19 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 500 Internal Server Error in 17ms (MongoDB: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `primary_key' for User:Class):
+  
+devise-jwt (0.6.0) lib/devise/jwt/models/jwt_authenticatable.rb:20:in `find_for_jwt_authentication'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/payload_user_helper.rb:15:in `find_user'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/user_decoder.rb:35:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/strategy.rb:22:in `authenticate!'
+warden (1.2.8) lib/warden/strategies/base.rb:54:in `_run!'
+warden (1.2.8) lib/warden/proxy.rb:369:in `block in _run_strategies_for'
+warden (1.2.8) lib/warden/proxy.rb:365:in `each'
+warden (1.2.8) lib/warden/proxy.rb:365:in `_run_strategies_for'
+warden (1.2.8) lib/warden/proxy.rb:335:in `_perform_authentication'
+warden (1.2.8) lib/warden/proxy.rb:133:in `authenticate!'
+devise (4.7.1) lib/devise/controllers/helpers.rb:118:in `authenticate_user!'
+activesupport (5.1.7) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.7) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.7) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.7) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.7) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.0.7) lib/rack/builder.rb:153:in `call'
+warden-jwt_auth (0.4.0) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-13 07:45:49 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 07:46:45 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 07:52:22 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 160ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 07:52:28 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 07:53:37 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 160ms (Views: 0.5ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 07:53:40 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 07:54:36 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 163ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 07:54:44 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 08:02:37 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 166ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:02:44 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 1ms (MongoDB: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-11-13 08:02:44 +0530
+Processing by SessionsController#new as */*
+Completed 200 OK in 41ms (Views: 0.5ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:03:07 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-11-13 08:03:07 +0530
+Processing by SessionsController#new as */*
+Completed 200 OK in 1ms (Views: 0.5ms | MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 08:03:44 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 174ms (Views: 0.5ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:03:48 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-11-13 08:03:48 +0530
+Processing by SessionsController#new as */*
+Completed 200 OK in 2ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 08:05:19 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-11-13 08:05:19 +0530
+Processing by SessionsController#new as */*
+Completed 200 OK in 2ms (Views: 0.5ms | MongoDB: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-11-13 08:05:41 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 156ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-13 08:06:20 +0530
+Processing by SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 204 No Content in 1ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 08:07:44 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 160ms (Views: 0.5ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:08:07 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-11-13 08:08:07 +0530
+Processing by SessionsController#new as */*
+Completed 200 OK in 11ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 08:10:53 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 166ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:10:57 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 08:11:24 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 170ms (Views: 0.6ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:11:32 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-13 08:11:49 +0530
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}}
+Completed 200 OK in 157ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:11:52 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 401 Unauthorized in 0ms (MongoDB: 0.0ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2019-11-13 08:34:00 +0530
+Error occurred while parsing request parameters.
+Contents:
+
+{"email": test@user.com , "password": password}
+  
+ActionDispatch::Http::Parameters::ParseError (765: unexpected token at '{"email": test@user.com , "password": password}'):
+  
+actionpack (5.1.7) lib/action_dispatch/http/parameters.rb:115:in `rescue in parse_formatted_parameters'
+actionpack (5.1.7) lib/action_dispatch/http/parameters.rb:109:in `parse_formatted_parameters'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:361:in `block in POST'
+rack (2.0.7) lib/rack/request.rb:59:in `fetch'
+rack (2.0.7) lib/rack/request.rb:59:in `fetch_header'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:360:in `POST'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/authenticate" for 127.0.0.1 at 2019-11-13 08:34:33 +0530
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"test@user.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 25ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by_email' for User:Class
+Did you mean?  find_by):
+  
+app/commands/authenticate_user.rb:18:in `user'
+app/commands/authenticate_user.rb:10:in `call'
+app/controllers/authentication_controller.rb:5:in `authenticate'
+Started POST "/authenticate" for 127.0.0.1 at 2019-11-13 08:37:02 +0530
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"test@user.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}
+Completed 200 OK in 604ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-11-13 08:37:26 +0530
+Processing by UsersController#index as */*
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-11-13 08:38:10 +0530
+Processing by UsersController#index as */*
+Completed 200 OK in 25ms (Views: 2.1ms | MongoDB: 0.0ms)
+
+
+Started POST "/authenticate" for ::1 at 2019-11-13 08:39:06 +0530
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"test@user.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}
+Completed 200 OK in 595ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:39:17 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started POST "/authenticate" for ::1 at 2019-11-13 08:40:51 +0530
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"test@user.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}
+Completed 200 OK in 597ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:41:02 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:49:34 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 0.5ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:49:58 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:50:27 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Completed 404 Not Found in 235ms (MongoDB: 0.1ms)
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class User with id(s) {"$oid"=>"5dcb723b945dbe6746be06b6"}.
+summary:
+  When calling User.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): {"$oid"=>"5dcb723b945dbe6746be06b6"} ... (1 total) and the following ids were not found: {"$oid"=>"5dcb723b945dbe6746be06b6"}.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/commands/authorize_api_request.rb:17:in `user'
+app/commands/authorize_api_request.rb:9:in `call'
+app/controllers/application_controller.rb:8:in `authenticate_request'
+Started POST "/authenticate" for ::1 at 2019-11-13 08:53:53 +0530
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"test@user.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}
+Completed 404 Not Found in 8ms (MongoDB: 0.0ms)
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:email=>"test@user.com"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/commands/authenticate_user.rb:18:in `user'
+app/commands/authenticate_user.rb:10:in `call'
+app/controllers/authentication_controller.rb:5:in `authenticate'
+Started POST "/authenticate" for ::1 at 2019-11-13 08:55:06 +0530
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"test@user.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}
+Completed 200 OK in 591ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:55:14 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcadea0945dbe462711cf85/tags" for ::1 at 2019-11-13 08:55:31 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcadea0945dbe462711cf85", "tag"=>{}}
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 722887ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcb7a1c945dbe76bae2f71d/tags" for ::1 at 2019-11-13 09:07:44 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcb7a1c945dbe76bae2f71d", "tag"=>{}}
+Completed 200 OK in 29ms (Views: 16.0ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 09:08:07 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 200 OK in 5ms (Views: 4.0ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 09:13:41 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 500 Internal Server Error in 29ms (MongoDB: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/user.rb:21:in `as_json'
+app/controllers/users_controller.rb:10:in `index'
+Started GET "/users" for ::1 at 2019-11-13 09:15:36 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 200 OK in 4ms (Views: 3.1ms | MongoDB: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-11-13 09:16:43 +0530
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+Completed 200 OK in 4ms (Views: 3.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcb7a1c945dbe76bae2f71d/tags" for ::1 at 2019-11-13 09:17:14 +0530
+Processing by TagsController#index as */*
+  Parameters: {"user_id"=>"5dcb7a1c945dbe76bae2f71d", "tag"=>{}}
+Completed 200 OK in 6ms (Views: 2.5ms | MongoDB: 0.0ms)
+
+
+Started POST "/users/5dcb7a1c945dbe76bae2f71d/tags" for ::1 at 2019-11-13 09:18:09 +0530
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"tag": {
+		name: "designing"
+	}
+}
+  
+ActionDispatch::Http::Parameters::ParseError (765: unexpected token at '{
+	"tag": {
+		name: "designing"
+	}
+}'):
+  
+actionpack (5.1.7) lib/action_dispatch/http/parameters.rb:115:in `rescue in parse_formatted_parameters'
+actionpack (5.1.7) lib/action_dispatch/http/parameters.rb:109:in `parse_formatted_parameters'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:361:in `block in POST'
+rack (2.0.7) lib/rack/request.rb:59:in `fetch'
+rack (2.0.7) lib/rack/request.rb:59:in `fetch_header'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:360:in `POST'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+mongoid (7.0.5) lib/mongoid/railties/controller_runtime.rb:19:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/5dcb7a1c945dbe76bae2f71d/tags" for ::1 at 2019-11-13 09:18:22 +0530
+Processing by TagsController#create as */*
+  Parameters: {"tag"=>{"name"=>"designing"}, "user_id"=>"5dcb7a1c945dbe76bae2f71d"}
+Completed 201 Created in 139ms (Views: 0.4ms | MongoDB: 0.1ms)
+
+
+Started GET "/users/5dcb7a1c945dbe76bae2f71d/tags" for ::1 at 2019-11-13 09:18:28 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"designing"}, "user_id"=>"5dcb7a1c945dbe76bae2f71d"}
+Completed 200 OK in 7ms (Views: 2.8ms | MongoDB: 0.0ms)
+
+
+Started PATCH "/users/5dcb7a1c945dbe76bae2f71d/tags/5dcb7d06945dbe68b88704d8" for ::1 at 2019-11-13 09:18:56 +0530
+Processing by TagsController#update as */*
+  Parameters: {"tag"=>{"name"=>"design"}, "user_id"=>"5dcb7a1c945dbe76bae2f71d", "id"=>"5dcb7d06945dbe68b88704d8"}
+Completed 500 Internal Server Error in 16ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `update_attributes' for #<Mongoid::Criteria:0x00007f2f08f48c18>
+Did you mean?  update_all):
+  
+app/controllers/tags_controller.rb:22:in `update'
+Started PATCH "/users/5dcb7a1c945dbe76bae2f71d/tags/5dcb7d06945dbe68b88704d8" for ::1 at 2019-11-13 09:20:04 +0530
+Processing by TagsController#update as */*
+  Parameters: {"tag"=>{"name"=>"design"}, "user_id"=>"5dcb7a1c945dbe76bae2f71d", "id"=>"5dcb7d06945dbe68b88704d8"}
+Completed 500 Internal Server Error in 22875ms (MongoDB: 0.0ms)
+
+
+  
+NoMethodError (undefined method `update_attributes' for #<Mongoid::Criteria:0x00007f2f08b6d9b8>
+Did you mean?  update_all):
+  
+app/controllers/tags_controller.rb:24:in `update'
+Started PATCH "/users/5dcb7a1c945dbe76bae2f71d/tags/5dcb7d06945dbe68b88704d8" for ::1 at 2019-11-13 09:20:31 +0530
+Processing by TagsController#update as */*
+  Parameters: {"tag"=>{"name"=>"design"}, "user_id"=>"5dcb7a1c945dbe76bae2f71d", "id"=>"5dcb7d06945dbe68b88704d8"}
+Completed 202 Accepted in 280ms (Views: 1.3ms | MongoDB: 0.3ms)
+
+
+Started GET "/users/5dcb7a1c945dbe76bae2f71d/tags" for ::1 at 2019-11-13 09:20:45 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design"}, "user_id"=>"5dcb7a1c945dbe76bae2f71d"}
+Completed 200 OK in 6ms (Views: 2.9ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcb7a1c945dbe76bae2f71d/tags/5dcb7d06945dbe68b88704d8" for ::1 at 2019-11-13 09:24:12 +0530
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for TagsController):
+  
+actionpack (5.1.7) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"tag": {
+		"name": "design",
+		"user_id": nil
+	}
+}
+Started GET "/users/5dcb7a1c945dbe76bae2f71d/tags/5dcb7d06945dbe68b88704d8" for ::1 at 2019-11-13 09:24:24 +0530
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for TagsController):
+  
+actionpack (5.1.7) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/users/5dcb7a1c945dbe76bae2f71d/tags/5dcb7d06945dbe68b88704d8" for ::1 at 2019-11-13 09:24:47 +0530
+Processing by TagsController#update as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}, "user_id"=>"5dcb7a1c945dbe76bae2f71d", "id"=>"5dcb7d06945dbe68b88704d8"}
+Completed 202 Accepted in 50ms (Views: 0.3ms | MongoDB: 0.0ms)
+
+
+Started GET "/users/5dcb7a1c945dbe76bae2f71d/tags" for ::1 at 2019-11-13 09:25:00 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}, "user_id"=>"5dcb7a1c945dbe76bae2f71d"}
+Completed 200 OK in 5ms (Views: 2.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:27:03 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Completed 200 OK in 5ms (Views: 4.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:29:35 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Completed 200 OK in 4ms (Views: 3.2ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:29:54 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Completed 200 OK in 4ms (Views: 3.6ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:30:00 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Completed 200 OK in 4ms (Views: 3.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:31:34 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Completed 200 OK in 7ms (Views: 6.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:31:40 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Completed 200 OK in 7ms (Views: 6.5ms | MongoDB: 0.0ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2019-11-13 09:41:49 +0530
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"test@user.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"test@user.com", "password"=>"[FILTERED]"}}
+Completed 200 OK in 1085ms (Views: 0.2ms | MongoDB: 0.4ms)
+
+
+Started GET "/tags/5dcb8013945dbe7de880c84a/remove_user" for 127.0.0.1 at 2019-11-13 09:43:33 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/tags/5dcb8013945dbe7de880c84a/remove_user"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/tags/5dcb8013945dbe7de880c84a/remove_user" for 127.0.0.1 at 2019-11-13 09:44:30 +0530
+Processing by TagsController#remove_user as */*
+  Parameters: {"tag_id"=>"5dcb8013945dbe7de880c84a"}
+Completed 202 Accepted in 416ms (Views: 1.0ms | MongoDB: 0.3ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:44:39 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:44:49 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Completed 200 OK in 68ms (Views: 67.3ms | MongoDB: 0.1ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:44:57 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Completed 200 OK in 5ms (Views: 5.1ms | MongoDB: 0.0ms)
+
+
+Started PATCH "/tags/5dcb8013945dbe7de880c84a/add_user" for 127.0.0.1 at 2019-11-13 09:45:17 +0530
+Processing by TagsController#add_user as */*
+  Parameters: {"tag_id"=>"5dcb8013945dbe7de880c84a"}
+Completed 202 Accepted in 75ms (Views: 0.4ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:46:22 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Completed 200 OK in 15246ms (Views: 4.8ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:47:01 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{"name"=>"design", "user_id"=>nil}}
+Completed 200 OK in 37768ms (Views: 3.5ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags" for ::1 at 2019-11-13 09:47:42 +0530
+Processing by TagsController#index as */*
+  Parameters: {"tag"=>{}}
+Completed 200 OK in 10022ms (Views: 3.0ms | MongoDB: 0.0ms)
+
+
+Started GET "/tags?order_by=asc" for ::1 at 2019-11-13 09:48:04 +0530
+Processing by TagsController#index as */*
+  Parameters: {"order_by"=>"asc", "tag"=>{}}
+Completed 200 OK in 7263ms (Views: 3.8ms | MongoDB: 0.0ms)
+
+
+Started PATCH "/users" for 127.0.0.1 at 2019-11-13 10:24:55 +0530
+  
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-11-13 10:25:07 +0530
+Processing by UsersController#index as */*
+Completed 200 OK in 413ms (Views: 46.3ms | MongoDB: 0.3ms)
+
+
